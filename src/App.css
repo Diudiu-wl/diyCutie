@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
+}
+
+.left-panel {
+  width: 60%; /* 左边占整个页面的 60% */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.right-panel {
+  width: 40%; /* 右边占整个页面的 40% */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 100px; /* 调整图片之间的间隔 */
+}
+
+.image-item {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.image-item:hover {
+  border-color: #007bff;
+}
+
+.display-box {
+  width: 200px; /* 将方框大小减小 */
+  height: 200px;
+  border: 2px dashed #ccc;
+  position: relative;
+}
+
+.selected-part {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 关于作者按钮和信息 */
+.about-author-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /*text-align: center;*/
+}
+
+.about-button {
+  background-color: #ee8bba;
   color: white;
+  border: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.about-button:hover {
+  background-color: #f4c2cd;
+}
+  
+
+.about-info {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 10;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.about-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* 手机端的布局调整 */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-panel, .right-panel {
+    width: 100%;
+    height: 50%; /* 上下各占一半 */
+    border-right: none; /* 移除边框 */
+    border-bottom: 1px solid #ccc;
+  }
+
+  .display-box {
+    width: 150px; /* 缩小展示框 */
+    height: 150px;
+  }
+
+  .image-item {
+    width: 50px;
+    height: 50px;
+  }
+
+  .row {
+    gap: 50px; /* 调整间距 */
   }
 }
+.save-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00a1d6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; /* 让按钮和图像框有些距离 */
+}
+
+.save-button:hover {
+  background-color: #63bad6;
+}
+
