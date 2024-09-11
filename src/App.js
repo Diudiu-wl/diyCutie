@@ -18,6 +18,8 @@ const body1ColorImages = [
   { id: 7, src: `${process.env.PUBLIC_URL}/images/color7_body1.png` },
   { id: 8, src: `${process.env.PUBLIC_URL}/images/color8_body1.png` },
   { id: 9, src: `${process.env.PUBLIC_URL}/images/color9_body1.png` },
+  { id: 10, src: `${process.env.PUBLIC_URL}/images/color10_body1.png` },
+  { id: 11, src: `${process.env.PUBLIC_URL}/images/color11_body1.png` },
  
 ];
 
@@ -69,6 +71,8 @@ const body2ColorImages = [
   { id: 7, src: `${process.env.PUBLIC_URL}/images/color7_body2.png` },
   { id: 8, src: `${process.env.PUBLIC_URL}/images/color8_body2.png` },
   { id: 9, src: `${process.env.PUBLIC_URL}/images/color9_body2.png` },
+  { id: 10, src: `${process.env.PUBLIC_URL}/images/color10_body2.png` },
+  { id: 11, src: `${process.env.PUBLIC_URL}/images/color11_body2.png` },
  
 ];
 
