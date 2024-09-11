@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/diyCutie/static/css/main.2e876373.css",
+    "main.js": "/diyCutie/static/js/main.a6a5d7d4.js",
+    "index.html": "/diyCutie/index.html",
+    "main.2e876373.css.map": "/diyCutie/static/css/main.2e876373.css.map",
+    "main.a6a5d7d4.js.map": "/diyCutie/static/js/main.a6a5d7d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e876373.css",
+    "static/js/main.a6a5d7d4.js"
+  ]
+}
