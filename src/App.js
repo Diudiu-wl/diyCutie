@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 
-// 图片资源的路径
+
 const bodyImages = [
   { id: 1, src: `${process.env.PUBLIC_URL}/images/body1.png` },
   { id: 2, src: `${process.env.PUBLIC_URL}/images/body2.png` },
 ];
 
-// 对应 body 1 的选项
+// body 1 的选项
 const body1ColorImages = [
   { id: 1, src: `${process.env.PUBLIC_URL}/images/color1_body1.png` },
   { id: 2, src: `${process.env.PUBLIC_URL}/images/color2_body1.png` },
@@ -60,7 +60,7 @@ const body1ClothImages = [
   { id: 4, src: `${process.env.PUBLIC_URL}/images/cloth4_body1.png` },
 ];
 
-// 对应 body 2 的选项
+// body 2 的选项
 const body2ColorImages = [
   { id: 1, src: `${process.env.PUBLIC_URL}/images/color1_body2.png` },
   { id: 2, src: `${process.env.PUBLIC_URL}/images/color2_body2.png` },
@@ -108,7 +108,7 @@ function App() {
   const [selectedMouth, setSelectedMouth] = useState(null);
   const [selectedClothes, setSelectedClothes] = useState(null);
   const [showAbout, setShowAbout] = useState(false);
-  const [aboutImage, setAboutImage] = useState(null);  // 新增的状态，用于显示作者图片
+  const [aboutImage, setAboutImage] = useState(null);  
 
   const canvasRef = useRef(null);
 
@@ -124,7 +124,7 @@ function App() {
     };
   }, [showAbout]);
 
-  // 根据 selectedBody 动态加载选项
+  
 
   const getColorImages = () => {
     if (selectedBody === `${process.env.PUBLIC_URL}/images/body1.png`) return body1ColorImages;
@@ -150,7 +150,7 @@ function App() {
     return [];
   };
 
-  // 判断是否禁用嘴巴选项
+  
   const isMouthDisabled = () => {
     return selectedBody === `${process.env.PUBLIC_URL}/images/body2.png`;
   };
@@ -183,7 +183,7 @@ function App() {
     // 创建一个虚拟的链接来下载图片
     const link = document.createElement("a");
     link.href = image;
-    link.download = "generated-image.png"; // 下载的文件名
+    link.download = "cutie.png"; // 下载的文件名
     link.click();
   };
 
@@ -196,9 +196,9 @@ function App() {
   const handleAboutClick = () => {
     setShowAbout(!showAbout);
     if (!showAbout) {
-      setAboutImage(`${process.env.PUBLIC_URL}/images/author.jpeg`);  // 替换为你的图片路径
+      setAboutImage(`${process.env.PUBLIC_URL}/images/author.jpeg`);  
     } else {
-      setAboutImage(null);  // 隐藏图片
+      setAboutImage(null);  
     }
   };
 
@@ -257,9 +257,9 @@ function App() {
               
               {selectedBody !== `${process.env.PUBLIC_URL}/images/body1.png` && (
                 <img
-                  src={`${process.env.PUBLIC_URL}/images/none-icon.png`}  //none-icon.png
+                  src={`${process.env.PUBLIC_URL}/images/none-icon.png`}  
                   alt="No Mouth Icon"
-                  onClick={() => setSelectedMouth(null)} // Click to hide mouth
+                  onClick={() => setSelectedMouth(null)} 
                   className="image-item"
                 />
               )}
@@ -280,9 +280,9 @@ function App() {
             <h3>请选择头饰</h3>
             <div className="row">
               <img
-                  src={`${process.env.PUBLIC_URL}/images/none-icon.png`}  //none-icon.png
+                  src={`${process.env.PUBLIC_URL}/images/none-icon.png`}  
                   alt="No Cloth Icon"
-                  onClick={() => setSelectedClothes(null)} // Click to hide cloth
+                  onClick={() => setSelectedClothes(null)} 
                   className="image-item"
               />
               {getClothImages().map((image) => (
@@ -311,7 +311,7 @@ function App() {
           {selectedClothes && <img src={selectedClothes} alt="Selected Clothes" className="selected-part" />}
         </div>
 
-        {/* 新增的保存按钮 */}
+        {/* 保存按钮 */}
         <button onClick={saveImage} className="save-button">
           保存图像
         </button>
