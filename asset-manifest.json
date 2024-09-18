@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/diyCutie/static/css/main.2e876373.css",
-    "main.js": "/diyCutie/static/js/main.da5dc9bb.js",
+    "main.js": "/diyCutie/static/js/main.b04b27a1.js",
     "index.html": "/diyCutie/index.html",
     "main.2e876373.css.map": "/diyCutie/static/css/main.2e876373.css.map",
-    "main.da5dc9bb.js.map": "/diyCutie/static/js/main.da5dc9bb.js.map"
+    "main.b04b27a1.js.map": "/diyCutie/static/js/main.b04b27a1.js.map"
   },
   "entrypoints": [
     "static/css/main.2e876373.css",
-    "static/js/main.da5dc9bb.js"
+    "static/js/main.b04b27a1.js"
   ]
 }
