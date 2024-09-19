@@ -39,6 +39,9 @@ const body1EyeImages = [
   { id: 12, src: `${process.env.PUBLIC_URL}/images/eye12_body1.png` },
   { id: 13, src: `${process.env.PUBLIC_URL}/images/eye13_body1.png` },
   { id: 14, src: `${process.env.PUBLIC_URL}/images/eye14_body1.png` },
+  { id: 15, src: `${process.env.PUBLIC_URL}/images/eye15_body1.png` },
+  //{ id: 16, src: `${process.env.PUBLIC_URL}/images/eye16_body1.png` },
+  
 ];
 
 const body1MouthImages = [
