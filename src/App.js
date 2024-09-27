@@ -65,6 +65,7 @@ const body1MouthImages = [
   { id: 18, src: `${process.env.PUBLIC_URL}/images/mouth18_body1.png`},
   { id: 19, src: `${process.env.PUBLIC_URL}/images/mouth19_body1.png`},
   { id: 20, src: `${process.env.PUBLIC_URL}/images/mouth20_body1.png`},
+  { id: 21, src: `${process.env.PUBLIC_URL}/images/mouth21_body1.png`},
 ];
 
 const body1ClothImages = [
